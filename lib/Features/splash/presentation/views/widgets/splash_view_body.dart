@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:todo_app/Core/utils/app_router.dart';
 import 'package:todo_app/constants.dart';
 
 class SplashViewBody extends StatefulWidget {
@@ -33,12 +35,8 @@ class _SplashViewBodyState extends State<SplashViewBody>
       if (mounted) {
         _controller.forward().then((_) {
           if (mounted) {
-            // Navigator.of(context).pushReplacement(
-            //   PageRouteBuilder(
-            //     pageBuilder: (_, __, ___) => widget.child,
-            //     transitionDuration: Duration.zero,
-            //   ),
-            // );
+            // Navigate to onboarding screen
+            context.go(AppRouter.kOnboardingView);
           }
         });
       }
