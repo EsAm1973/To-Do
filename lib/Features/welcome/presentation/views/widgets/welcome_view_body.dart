@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:todo_app/Core/utils/app_router.dart';
 import 'package:todo_app/Core/utils/styles.dart';
 import 'package:todo_app/Core/widgets/custom_button.dart';
 
@@ -25,8 +27,10 @@ class WelcomeViewBody extends StatelessWidget {
           ),
           const Spacer(),
           CustomButton(
+            text: 'LOGIN',
             onPressed: () {
               // Navigate to login screen
+              GoRouter.of(context).push(AppRouter.kLoginView);
             },
           ),
           const SizedBox(height: 28),

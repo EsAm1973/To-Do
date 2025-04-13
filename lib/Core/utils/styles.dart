@@ -16,4 +16,9 @@ abstract class Styles {
     fontSize: 16,
     fontWeight: FontWeight.normal,
   );
+
+  static TextStyle textStyle14 = GoogleFonts.lato(
+    fontSize: 14,
+    fontWeight: FontWeight.normal,
+  );
 }
