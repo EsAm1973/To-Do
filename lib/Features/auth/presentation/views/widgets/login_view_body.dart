@@ -10,26 +10,29 @@ class LoginViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 100, left: 24, right: 24),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            'Login',
-            style: Styles.textStyle32.copyWith(color: Colors.white),
-          ),
-          const SizedBox(height: 32),
-          const LoginForm(),
-          const SizedBox(height: 32),
-          const DividerWithText(text: 'or'),
-          const SizedBox(height: 32),
-          const SocialLoginSection(),
-          const SizedBox(
-            height: 40,
-          ),
-          const RegisterPrompt(),
-        ],
+    return SingleChildScrollView(
+      child: Padding(
+        padding: const EdgeInsets.only(top: 100, left: 24, right: 24),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Login',
+              style: Styles.textStyle32.copyWith(color: Colors.white),
+            ),
+            const SizedBox(height: 32),
+            const LoginForm(),
+            const SizedBox(height: 32),
+            const DividerWithText(text: 'or'),
+            const SizedBox(height: 32),
+            const SocialLoginSection(),
+            const SizedBox(
+              height: 40,
+            ),
+            const RegisterPrompt(),
+            const SizedBox(height: 12,),
+          ],
+        ),
       ),
     );
   }

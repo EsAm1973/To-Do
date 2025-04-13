@@ -6,7 +6,7 @@ class SocialLoginSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SocialLoginButton(
+    return SocialButton(
       text: 'Login with Google',
       iconPath: 'assets/icons/google.png',
       onPressed: () {

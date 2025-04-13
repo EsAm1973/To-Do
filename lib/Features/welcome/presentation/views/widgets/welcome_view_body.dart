@@ -30,7 +30,7 @@ class WelcomeViewBody extends StatelessWidget {
             text: 'LOGIN',
             onPressed: () {
               // Navigate to login screen
-              GoRouter.of(context).push(AppRouter.kLoginView);
+              GoRouter.of(context).pushReplacement(AppRouter.kLoginView);
             },
           ),
           const SizedBox(height: 28),
@@ -40,6 +40,7 @@ class WelcomeViewBody extends StatelessWidget {
             child: OutlinedButton(
               onPressed: () {
                 // Navigate to create account screen
+                GoRouter.of(context).pushReplacement(AppRouter.kSignupView);
               },
               style: OutlinedButton.styleFrom(
                 side: const BorderSide(color: Color(0xFF8875FF)),

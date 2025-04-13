@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/Core/utils/styles.dart';
 
-class SocialLoginButton extends StatelessWidget {
+class SocialButton extends StatelessWidget {
   final String text;
   final String iconPath;
   final VoidCallback onPressed;
 
-  const SocialLoginButton({
+  const SocialButton({
     super.key,
     required this.text,
     required this.iconPath,
